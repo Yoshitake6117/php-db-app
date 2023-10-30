@@ -3,7 +3,7 @@ $dsn = 'mysql:dbname=php_db_app;host=localhost;charset=utf8mb4';
 $user = 'root';
 $password = '';
 
-// submitパラメータの値が存在するとき（登録ボタンを押下時）の処理
+// submitパラメータの値が存在するとき（登録ボタンを押下時）の処理 
 if(isset($_POST['submit'])) {
   try {
     $pdo = new PDO($dsn, $user, $password);
